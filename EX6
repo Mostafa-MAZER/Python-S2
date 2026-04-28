@@ -1,0 +1,13 @@
+def f(x):
+    return x**2-2
+print(f(2))
+def zero(a,b,eps):
+    while b-a>eps:
+        c=(a+b)/2
+        if f(a)*f(c)<=0:
+            b=c
+        if f(b)*f(c)<=0:
+            a=c
+    return c
+print(zero(1,2,10**(-6)))
+

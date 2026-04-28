@@ -1,0 +1,5 @@
+def suit_arith(a,r,n):
+    Un=a+(n-1)*r
+    S=(n*(a*Un))/2
+    return S
+print(suit_arith(3,4,1))

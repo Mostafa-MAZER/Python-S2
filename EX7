@@ -1,0 +1,6 @@
+def pgcd(a,b):
+    if b==0:
+        return 1
+    else:
+        return pgcd(b,a%b)
+print(pgcd(4,5))

@@ -1,0 +1,7 @@
+def somme(n,p):
+    s=0
+    for k in range(0,n+1):
+        s+=k**p
+    return s
+
+print(somme(4,3))

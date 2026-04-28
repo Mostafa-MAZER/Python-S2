@@ -1,0 +1,6 @@
+def binomail(n,p):
+    if p==0 or p==n or p>n:
+        return 1
+    else:
+        return binomail(n-1, p-1) + binomail(n-1, p)
+print(binomail(4,3))
