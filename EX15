@@ -1,0 +1,27 @@
+T=['a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p','q','r','s','t','u','v','w','x','y','z']
+def nb_occurreces_minuscules(s):
+    M=0
+    for letter in s:
+        for i in range(26):
+            if letter==T[i]:
+               M+=1
+    return M
+
+def ensemble_minuscules(s):
+    min=set()
+    for letter in s:
+        for i in range(26):
+            if letter==T[i]:
+               min.add(letter)
+    return min
+
+
+def nb_minuscules(s):
+    nombre={}
+    for letter in s:
+        if letter in T:
+            if letter in nombre:
+                nombre[letter]+=1
+            else:
+                nombre[letter]=1
+    return nombre

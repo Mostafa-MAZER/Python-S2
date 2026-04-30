@@ -1,0 +1,5 @@
+etudiants=[('Ali',14),('Sara',18),('Toussef',12)]
+def ordre(etudaints):
+    croissant_etudiants= sorted(etudiants,key=lambda x:x[1])
+    return croissant_etudiants
+print(ordre(etudiants))

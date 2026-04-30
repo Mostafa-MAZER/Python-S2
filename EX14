@@ -1,0 +1,7 @@
+def numerique(dic):
+    n=len(dic)
+    s=sum(dic.values())
+    M=max(dic.values())
+    m=min(dic.values())
+    mo=s/n
+    return(n,s,M,m,mo)

@@ -1,0 +1,7 @@
+personne ={}
+n=int(input("combien de nom : "))
+for i in range(n):
+    nom=input("donner le nom de etudiant : ")
+    note=float(input("donner la note de l'etudiant :"))
+    personne[nom]=note
+print(personne)

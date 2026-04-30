@@ -1,0 +1,3 @@
+notes={'mostafa':20,'yssin':19,'ana':30}
+result=max(notes,key=lambda x:notes[x])
+print(result)
